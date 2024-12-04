@@ -30,4 +30,6 @@ int main() {
         similarity_score += a[i] * multiplier;
     }
     cout << similarity_score << endl;
+
+    
 }
