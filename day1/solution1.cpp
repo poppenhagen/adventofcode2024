@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
 
+    int const smalln = 6;
     int const n = 1000;
 
     vector<int> a, b;
