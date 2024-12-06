@@ -26,13 +26,30 @@ vector<int> split_line(string line){
 };
 
 int main(){
-    ifstream inputFile("smallinput");
+    ifstream inputFile("smallinput"); 
     string raw_input;
-    vector<vector <int>> reports; 
+    vector<vector <int>> safe_strings; // This is not necessary. Have a variable that's just counting the amount safe passages, not the passages themselves
+    bool increasing;
+    bool safe;
 
     if(inputFile.is_open()){
             while(getline(inputFile, raw_input)){
-                reports.push_back(split_line(raw_input));
+
+                to_check = split_line(raw_input);
+                for (int i = 1; i < size(to_check); i++){
+                    if(to_check[i-1]-to_check[i] < 0){
+                        
+                        increasing = false;
+                    }
+                    if(to_check[i-1]-to_check[i] > 0){
+                        increasing = true;
+                    }
+                    else{
+                        bool safe = false;
+                    }
+                }
+
+                // safe.push_back(split_line(raw_input));
             }
 
         }
