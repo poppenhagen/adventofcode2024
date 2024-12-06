@@ -30,7 +30,7 @@ int main(){
     string raw_input;
     vector<vector <int>> safe_strings; // This is not necessary. Have a variable that's just counting the amount safe passages, not the passages themselves
     bool increasing;
-    bool safe;
+    bool safe; // set this to null. Then perform checks afterwards
 
     if(inputFile.is_open()){
             while(getline(inputFile, raw_input)){
